@@ -1,0 +1,86 @@
+@import "../abstracts/variables";
+
+.card__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card__details {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    max-width: 90%;
+    // border: 1px solid red;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    text-align: left;
+
+    img {
+      width: 25%;
+      height: 25%;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      margin: 2.5rem 0;
+    }
+
+    button {
+      padding: 0.7rem 1.5rem;
+      border-radius: 5rem;
+      border: none;
+      margin-top: 5rem;
+      cursor: pointer;
+    }
+
+    .card__detail {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 5rem;
+
+      &-button {
+        .seadans__btn {
+          color: $brightOrange;
+        }
+
+        .suv__btn {
+          color: $darkCyan;
+        }
+
+        .luxury__btn {
+          color: $veryDarkCyan;
+        }
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: $veryLightGray;
+      }
+
+      p {
+        color: $transparentWhiteParagraphs;
+        line-height: 1.5;
+        max-width: 100%;
+        width: 200px;
+      }
+    }
+
+    .card--sedans {
+      background-color: $brightOrange;
+    }
+
+    .card--suvs {
+      background-color: $darkCyan;
+    }
+
+    .card--luxury {
+      background-color: $veryDarkCyan;
+    }
+  }
+}
